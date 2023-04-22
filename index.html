@@ -8,7 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <title>Mi Entrada.com</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -16,30 +19,47 @@
 <body>
   <header>
     <!-- Sección de Inicio -->
-    <section>
-        <div class="logo">
-          <img src="/img/logo.PNG" alt="logo" width="120">
-        </div>
-      </section>
-    <section class="header">
-        <input type="checkbox" name="" id="btn-menu">
-      <label for="btn-menu"><img src="/img/menu_blanco.png" alt="Menu" width="30"></label>
-      <nav class="menu">
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Registro</a></li>
-        <li><a href="#">Eventos</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img src="/img/logo.PNG" alt="Menu" width="120"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Nosotros <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Registro <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Eventos <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Contacto <span class="sr-only">(current)</span></a>
+          </li>
+          
+        </ul>
+        
+      </div>
     </nav>
-    </section>
+    
+    
+    
+    
+    
+    
+    
   </header>
 
   <main>
 
     <!-- Sección de Nosotros -->
-    <section id="nosotros" class="padre">
+    <section id="nosotros" >
       <div class="caja">
         <div class="izquierda">Nosotros</div>
         <div class="derecha">Texto</div>
@@ -51,7 +71,7 @@
     </section>
 
     <!-- Sección de Registro -->
-    <section id="registrate" class="padre">
+    <section id="registrate">
 
       <div class="caja">
         <div class="izquierda">Registro</div>
@@ -60,7 +80,7 @@
     </section>
 
     <!-- Sección de Eventos -->
-    <section id="eventos" class="padre">
+    <section id="eventos" >
       <div class="caja">
         <div class="izquierda">Eventos</div>
         <div class="derecha">Texto</div>
@@ -72,7 +92,7 @@
   <footer>
 
     <!-- Sección de Contacto -->
-    <section id="contacto" class="padre">
+    <section id="contacto" >
       <div class="caja">
         <div class="izquierda">Contacto</div>
         <div class="derecha">Texto</div>

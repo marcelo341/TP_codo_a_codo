@@ -1,113 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+
+}
+
+
 body {
   font-family:'Courier New', Courier, monospace    
     margin: 0;
-   
   }
 
-header{
-  width: 100%;
-  background-color: #000;
-}  
 
-#btn-menu {
-  display: none;
-}
-header label {
-  display: none;
-  width: 30px;
-  height: 30px;
-  padding: 10px;
-  /* border-right: 1px solid #fff; */
-  
-}
-header label:hover {
-  cursor: pointer;
-  background: rgba(0,0,0,0.3) ;
-}
-
-.menu ul {
-  margin: 0;
-  list-style: none;
-  padding: 0;
-  display: flex;
- 
-
-}
-.menu li {
-    background: #0f0f0f;
-  border-right: 1px solid   #e4b10a;
-  a;
-
-}
-.menu li:hover {
-  background-color: rgba(0,0,0,0.3);
-}
-.menu li a {
-  display: block;
-  padding: 15px 20px;
-  color: #fff;
-  text-decoration: none;
-
-}
 
 /* Se establece lo que pasara cuando la pantalla sea menor a 768 px */
 @media (max-width:768px) {
-  header label {
-    display: block;
-  }
-  .menu {
-    position: absolute;
-    background: #e4b10a;
-    width: 70%;
-    margin-left: -100%;
-    transition: all 0.5s;
-  }
-.menu ul {
-  flex-direction: column;
-}
-.menu li {
-  border-top: 1px solid #fff;
-}
-#btn-menu:checked ~ .menu {
-  margin: 0;
-  }
 
 }
 
 
 
-.padre {
-  height: 100vh;
+
+.caja {
+  
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 3rem;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: 00bcd4;
   padding: 10px;
 }
-
-  .hijo{
-
-  background-color: #ff9800;
-  border: 2px dotted white;
-  width: 200 ;
-  height: 100;
-  margin: 30;
-  padding: 20;
-  font-size: 40;
-  text-align: center;
-}
-
 
 .izquierda,
 .derecha {
   background-color: #ccc;
   text-align: center;
-  line-height: 50px;
+  line-height: 100px;
   font-weight: bold;
   
 }
@@ -140,18 +69,4 @@ header label:hover {
   text-decoration: none;
 }
 
-.instagram-button i {
-  margin-right: 10px;
-  font-size: 20px;
-}
 
-.logo,
-.social {
-  width: calc(20% - 10px);
-  height: 70px;
-  background-color: #000708;
-  text-align: center;
-  line-height: 50px;
-  font-weight: bold;
-  
-}
