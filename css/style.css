@@ -4,7 +4,13 @@ body {
   font-family:'Courier New', Courier, monospace    
     margin: 0;
   }
-
+//determino el tamaño y tipo de container
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
 
 
 /* 
@@ -23,12 +29,22 @@ Colores de fondo
 .instagram-button {
   display: inline-block;
   background-color: #e1306c;
-  color: white;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 0;     //modifico
   border-radius: 5px;
   text-decoration: none;
 }
+/*Agrego parametros logo de twitter*/
+.twitter-button {
+ height: auto;
+ width: auto;
+ max-height: 100px;
+ max-width: 100px;
+ position: absolute;
+ top: 150;
+ left:200;
+}
+
 .texto1{background-color: #E8C909;}
 .imagen1{background-color: #e1306c;}
 .texto2{background-color: #0da5d3;}
@@ -57,7 +73,11 @@ Nombres de áreas
 /*Pie*/
 .item6 {grid-area: footer;}
 
-
+/* Logos*/         /*clase logo*/
+.logo-inicio {
+  display: inline-block;
+  margin: 200px;
+}
 
 
 
