@@ -1,58 +1,88 @@
-
-
 body {
-  font-family:'Courier New', Courier, monospace    
-    margin: 0;
-  }
-//determino el tamaño y tipo de container
-.container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
+  font-family: 'Courier New', Courier, monospace 
+
 }
+
 
 
 /* 
 +++++++++++++++++++++++++++++++++++++++++
 Colores de fondo
 ++++++++++++++++++++++++++++++++++++++++*/
-.nosotros {background-color: #3D24FF;}
-.registrate {background-color: #ff9800;}
-.eventos {background-color: #e91e63;}
-.contacto {background-color: #9c27b0;}
-.aside{background-color: #9C8600;}
-.widget1{background-color: #0dd445;}
-.widget2{background-color: #dddd09;}
-.footer{  background-color: #12e4e4;}
+.nosotros {
+  background-color: #3D24FF;
+}
+
+.registrate {
+  background-color: #ff9800;
+}
+
+.eventos {
+  background-color: #e91e62;
+}
+
+.contacto {
+  background-color: #9c27b0;
+}
+
+.aside {
+  background-color: #9C8600;
+}
+
+.widget1 {
+  background-color: #0dd445;
+}
+
+.widget2 {
+  background-color: #dddd09;
+}
+
+.footer {
+  background-color: #12e4e4;
+}
+
 
 .instagram-button {
   display: inline-block;
   background-color: #e1306c;
+  color: white;
   font-weight: bold;
-  padding: 0;     //modifico
+  padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
 }
-/*Agrego parametros logo de twitter*/
-.twitter-button {
- height: auto;
- width: auto;
- max-height: 100px;
- max-width: 100px;
- position: absolute;
- top: 150;
- left:200;
+
+.texto1 {
+  background-color: #E8C909;
 }
 
-.texto1{background-color: #E8C909;}
-.imagen1{background-color: #e1306c;}
-.texto2{background-color: #0da5d3;}
-.imagen2{background-color: #3fb517;}
-.texto3{background-color: #08b046;}
-.imagen3{background-color: #dedb0d;}
-.texto4{background-color: #ba0d2d;}
-.imagen4{background-color: #4f0a8f;}
+.imagen1 {
+  background-color: #e1306c;
+}
+
+.texto2 {
+  background-color: #0da5d3;
+}
+
+.imagen2 {
+  background-color: #3fb517;
+}
+
+.texto3 {
+  background-color: #08b046;
+}
+
+.imagen3 {
+  background-color: #dedb0d;
+}
+
+.texto4 {
+  background-color: #ba0d2d;
+}
+
+.imagen4 {
+  background-color: #4f0a8f;
+}
 
 
 /* 
@@ -60,24 +90,36 @@ Colores de fondo
 Nombres de áreas 
 ++++++++++++++++++++++++++++++++++++++++*/
 /*Encabezado*/
-.item1 {grid-area: header;}
+.item1 {
+  grid-area: header;
+}
+
 /*Principal*/
-.item2 {grid-area: main;}
+.item2 {
+  grid-area: main;
+}
+
 /*Aside*/
-.item3 {grid-area: aside;}
+.item3 {
+  grid-area: aside;
+}
+
 /*Widget1*/
-.item4 {grid-area: widget1;}
+.item4 {
+  grid-area: widget1;
+}
+
 /*Widget2*/
-.item5 {grid-area: widget2;}
+.item5 {
+  grid-area: widget2;
+}
 
 /*Pie*/
-.item6 {grid-area: footer;}
-
-/* Logos*/         /*clase logo*/
-.logo-inicio {
-  display: inline-block;
-  margin: 200px;
+.item6 {
+  grid-area: footer;
 }
+
+
 
 
 
@@ -86,22 +128,22 @@ Nombres de áreas
 Contenedor general
 ++++++++++++++++++++++++++++++++++++++++*/
 .grid-container {
-    display: grid;
-    grid-template-areas:
-        /*6 columnas y 3 filas*/
-        'main main main main aside aside'
-        'widget1 widget1 widget2 widget2 aside aside'
-        'footer footer footer footer footer footer';
-    grid-gap: 1px;
-    background-color: #15039C;
-    padding: 0px;
+  display: grid;
+  grid-template-areas:
+    /*6 columnas y 3 filas*/
+    'main main main main aside aside'
+    'widget1 widget1 widget2 widget2 aside aside'
+    'footer footer footer footer footer footer';
+  grid-gap: 1px;
+  background-color: #15039C;
+  padding: 0px;
 }
 
-.grid-container > div {
-    background-color: rgba(130, 104, 237, 0.8);
-    text-align: center;
-    padding: 10px 0;
-    font-size: 20px;
+.grid-container>div {
+  background-color: rgba(130, 104, 237, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
 }
 
 /* 
@@ -111,51 +153,216 @@ Acomodamos texto e imagen en la misma línea
 .nosotros,
 .registro,
 .eventos,
-.contacto{
+.contacto {
   display: inline-flex;
- }
+}
 
 
 
- /* 
+/* 
 +++++++++++++++++++++++++++++++++++++++++
 2 puntos de corte 
 ++++++++++++++++++++++++++++++++++++++++*/
 
- /* Se establece lo que pasara cuando la pantalla sea menor a 768 px */
+/* Se establece lo que pasara cuando la pantalla sea menor a 768 px */
 @media (max-width:768px) {
 
   .grid-container {
     display: grid;
     grid-template-areas:
-        /*4 columnas y 4 filas*/
-        'main main main main'
-        'aside aside aside aside'
-        'widget1 widget1 widget2 widget2'
-        'footer footer footer footer';
+      /*4 columnas y 4 filas*/
+      'main main main main'
+      'aside aside aside aside'
+      'widget1 widget1 widget2 widget2'
+      'footer footer footer footer';
     grid-gap: 1px;
     background-color: #00060b;
     padding: 0px;
-}
+  }
 
 
 }
- /* Se establece lo que pasara cuando la pantalla sea menor a 450 px */
+
+/* Se establece lo que pasara cuando la pantalla sea menor a 450 px */
 @media (max-width:450px) {
 
   .grid-container {
     display: grid;
     grid-template-areas:
-        /*2 columnas y 5 filas*/
-        'main main'
-        'aside aside'
-        'widget1 widget1'
-        'widget2 widget2'
-        'footer footer ';
+      /*2 columnas y 5 filas*/
+      'main main'
+      'aside aside'
+      'widget1 widget1'
+      'widget2 widget2'
+      'footer footer ';
     grid-gap: 1px;
     background-color: #00060b;
     padding: 0px;
+  }
+
+}
+
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor-titulo-controles h3 {
+  background: #eababa;
+  color: #d01b1b;
+  font-size: 20px;
+
+}
+
+.indicadores button {
+  background: #fff;
+  height: 4px;
+  width: 10px;
+  cursor: pointer;
+  border: none;
+  margin-right: 4px;
+}
+
+.indicadores button:hover,
+.indicadores button.activo {
+  background: red;
 }
 
 
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+.eventos-recomendadas {
+  position: relative;
+
 }
+
+.contenedor-principal {
+  align-items: center;
+}
+
+.flecha-izquierda,
+.flecha-derecha {
+  position: absolute;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 30px;
+  height: 30%;
+  top: calc(50% - 15%);
+  line-height: 40px;
+  width: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 500;
+  transition: .8s ease all;
+}
+
+.flecha-izquierda:hover,
+.flecha-derecha:hover {
+  background: rgba(0, 0, 0, .9);
+}
+
+.flecha-izquierda {
+  left: 0;
+}
+
+.flecha-derecha {
+  right: 0;
+}
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.eventos-recomendadas .contenedor-carousel {
+  padding: 5px 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 900px;
+ height: 300px;
+  
+}
+
+.evento {
+ min-width: 33%;
+
+}
+
+
+.evento img {
+ width: 99%;
+ height: 100%;
+  border-radius: 10px;
+}
+
+
+.flip-box {
+  width: 100%;
+  height: 100%;
+
+}
+
+/* dos puntos de corte para el courucel para que no se vea chiquito no lo pude hacer full responsiv por deformacion de imagenes*/
+
+
+@media (max-width: 1200px) {
+  .evento {
+    min-width: 50%;
+  }
+  .carousel {
+    width: 600px;
+   height: 300px;
+    
+  }
+}
+@media (max-width: 800px) {
+  .evento {
+    min-width: 100%;
+  }
+  .carousel {
+    width: 300px;
+   height: 300px;
+    
+  }
+}
+
+
+/* Contendor de back flip y fron flip */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Hace flip horizontl al pasar el mouse*/
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Posiciones de flip adelante */
+.flip-box-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* estilos y posiciones de flip de atras */
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(32, 25, 106, 0.763);
+  color: rgb(236, 5, 5);
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
