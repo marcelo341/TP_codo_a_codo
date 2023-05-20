@@ -1,0 +1,37 @@
+
+h3{
+    text-align: center;
+}
+.interior{
+    border:none;
+    border-radius:10px;
+    background-color: rgb(239, 246, 246);    
+}
+table{
+    border:#eba834;
+    border-radius:10px;
+    background:#289e80;
+    color:white;
+    }
+    #nombre_r,#edad_r,#apellido_r
+    {
+    background:white;
+    color:#289e80;
+    }
+    #cuadro{
+      border:none;
+      background:#f25669;
+      width:30em;
+      margin:auto;
+      padding:40px;
+      border-radius:10px;
+    }
+    .button{
+    border:none;
+    padding:10px;
+    border-radius:15px;
+    color:white;
+    background:#eba834;
+    cursor: pointer;
+    }
+    .button:hover {background: #34ebbd;}

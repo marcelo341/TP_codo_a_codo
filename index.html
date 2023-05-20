@@ -1,166 +1,123 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <title>Mi Entrada.com</title>
-  <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Entrada</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
-  <header>
-    <!-- Sección de Inicio -->
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#"><img src="img/logo4_18_142826.png" alt="Menu" width="220"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="padre">
+        <header class="header">
+            <div class="menu margen-interno">
+                <div class="logo">
+                    <a href="index.html">TU ENTRADA</a>
+                </div>
+                <div class="nav">
+                    <a href="#"><i class="fa-solid fa-house"></i>Inicio</a>
+                    <a href="#"><i class="fa-solid fa-music"></i>Shows</a>
+                    <a href="#"><i class="fa-solid fa-newspaper"></i>Noticias</a>
+                    <a href="formulario.html"><i class="fa-solid fa-address-card"></i>Registro</a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i>Contacto</a>
+                </div>
+                <div class="social">
+                    <div><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+                    <div><a href="#"><i class="fa-brands fa-square-instagram"></i></a></div>
+                </div>
 
-   
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Nosotros <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Registro <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Eventos <span class="sr-only">(current)</span></a>
 
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Contacto <span class="sr-only">(current)</span></a>
-          </li>
-
-        </ul>
-
-      </div>
-    </nav>
-
-  </header>
-
-  <main>
-
-    <div class="grid-container">
-
-      <div class="item2">
-        <div class="nosotros">
-            <div class="texto1">
-              <p>Somos una empresa creada por artistas. Te ofrecemos los mejores espectáculos en la ciudad de Buenos Aires. </p>
             </div>
-        </div>
-      
 
-        <div class="registro">
-          <div class="texto2">
-            <p>Accede a increibles ofertas registrandote con nosotros </p>
-          </div>
-          <div class="imagen2">
-            <!-- <img src="/img/menu.png" alt="Menu" width="120"> -->
-          </div>
-
-        </div>
-        <div class="eventos">
-          <div class="texto3">
-          </div>
-
-              </div>
-
-      </div>
-      <div class="item3">
-                <div class="aside">
-                  <h3 >Reseñas de Estadios</h3>
-                  <div >
-                    <div >
-                      <h4 >Luna Park</h4>
-                      <a href="https://www.lunapark.com.ar/" alt="lunapark">
-                       <img  src="./img/luna_park.jpg"  width="300"></a>
-                      <p>
-                        <br>
-                        El Luna Park es un tradicional estadio cubierto de Buenos Aires, Argentina, 
-                        donde se realizan actividades artísticas y deportivas, 
-                       fundado por Ismael Pace y José Lectoure en 1931. 
-                       Antes, había funcionado donde hoy se levanta el Obelisco de Buenos Aires.
-                      </p>
-                    </div>
-        
-                    <div class="movistar_arena">
-                      <h4 class="subtitulos_estadios">Movistar Arena</h4>
-                      <a href="https://www.movistararena.com.ar/">
-                      <img src="./img/movistar_arena.jpg"  width="300" alt="movistar"></a>
-                      <p>
-                        <br>
-                        Movistar Arena es un miniestadio cubierto para eventos artísticos, musicales, 
-                        culturales y deportivos situado en el barrio de Villa Crespo de Buenos Aires, 
-                        Argentina con capacidad para 15 000 personas.
-                      </p>
-                    </div>
+            <div class="texto-principal margen-interno">
+                
+                <h1 class="animated-text">¡Bienvenido/a a nuestra página web especializada en la venta de entradas para espectáculos! Descubre
+                    un mundo de emociones y entretenimiento en un solo lugar. Desde conciertos y obras de teatro hasta
+                    eventos deportivos, tenemos la entrada perfecta para hacer de tu experiencia algo inolvidable.
+                    ¡Compra ahora y vive momentos únicos!</h1>
                     
-                    <div class="estadio_obras">  
-                      <h4 class="subtitulos_estadios">Estadio Obras</h4>
-                      <a href="https://www.estadioobras.com.ar/" alt="obras">
-                      <img  src="./img/obras_sanitarias.jpg" width="300"></a>
-                      <p>
-                        <br>
-                        El Estadio Obras Sanitarias, inaugurado en junio de 1978, 
-                        es el estadio del Club Atlético Obras Sanitarias de la Nación, 
-                        club fundado el 27 de mayo de 1917 por un grupo de trabajadores 
-                        de la empresa pública Obras Sanitarias de la Nación de Argentina.
-                      </p>
-                    </div>
-                    
-                  </div>
-                </div>        
-      </div>
-      <div class="item4">
-                <div class="widget1">
-                  <iframe src="https://www.meteoblue.com/es/tiempo/widget/daily/-34.594N-58.448E16_America%2FArgentina%2FCordoba?geoloc=fixed&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&winddirection=0&uv=0&humidity=0&precipitation=0&precipitationprobability=0&precipitationprobability=1&spot=0&pressure=0&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 216px; height: 420px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/es/tiempo/semana/-34.594N-58.448E16_America%2FArgentina%2FCordoba?utm_source=weather_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">meteoblue</a></div>
-                  <p>Como estará el clima </p>
+            </div>
+        </header>
+        <section class="section margen-interno">
+            <div class="articulos">
+                <article class="article"> <img src="/img/500_281_px.jpg" alt="">
+                    <h3>Fecha</h3>
+                    <h2>Noticia</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima alias earum inventore!
+                        Reprehenderit, nulla molestiae voluptas maiores aut omnis ipsum eaque! Repellendus illo magnam
+                        recusandae quo itaque laudantium numquam reiciendis?</p>
+                    <a href="#">Leer más...</a>
+                </article>
+                <article class="article"> <img src="/img/500_281_px.jpg" alt="">
+                    <h3>Fecha</h3>
+                    <h2>Noticia</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima alias earum inventore!
+                        Reprehenderit, nulla molestiae voluptas maiores aut omnis ipsum eaque! Repellendus illo magnam
+                        recusandae quo itaque laudantium numquam reiciendis?</p>
+                    <a href="#">Leer más...</a>
+                </article>
+                <article class="article"> <img src="/img/500_281_px.jpg" alt="">
+                    <h3>Fecha</h3>
+                    <h2>Noticia</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima alias earum inventore!
+                        Reprehenderit, nulla molestiae voluptas maiores aut omnis ipsum eaque! Repellendus illo magnam
+                        recusandae quo itaque laudantium numquam reiciendis?</p>
+                    <a href="#">Leer más...</a>
+                </article>
+                <article class="article"> <img src="/img/500_281_px.jpg" alt="">
+                    <h3>Fecha</h3>
+                    <h2>Noticia</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima alias earum inventore!
+                        Reprehenderit, nulla molestiae voluptas maiores aut omnis ipsum eaque! Repellendus illo magnam
+                        recusandae quo itaque laudantium numquam reiciendis?</p>
+                    <a href="#">Leer más...</a>
+                </article>
+                <nav class="navegacion">
+                    <a href="#">Inicio</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">final</a>
+                </nav>
+            </div>
+            <aside class="aside">
+
+                <div class="publicidad">
+                    <h4>Cómo estará el tiempo</h4>
+                    <iframe
+          src="https://www.meteoblue.com/es/tiempo/widget/daily/api_nepal_1283728?geoloc=fixed&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windgust=0&winddirection=0&uv=0&humidity=0&precipitation=0&precipitationprobability=0&spot=0&pressure=0&layout=light"
+          frameborder="0" scrolling="NO" allowtransparency="true"
+          sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
+          style="width: 216px; height: 220px"></iframe>
                 </div>
-      </div>
-      <div class="item5">
-                <div class="widget2">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1380.9104908501092!2d-58.44822993731247!3d-34.59462311971677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1684105695260!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  <p>Donde estamos</p>
+                <div class="publicidad">
+                    <h4>Donde estamos</h4>
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d615.0581419112617!2d-58.38202026863766!3d-34.60374358970748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sobelisco!5e0!3m2!1ses!2sar!4v1684524783674!5m2!1ses!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-      </div>
-      <div class="item6">
-                <div class="footer"><p>Pié de página Pié de página Pié de página Pié de página </p>
-                </div>
-      </div>
+            </aside>
+        </section>
+        <footer class="footer margen-interno">
+            <nav class="pie">
+                <a href="">Desarrollado por Grupo 10</a>
+            </nav>
+        </footer>
+
+
+
+
+
     </div>
+    <script src="https://kit.fontawesome.com/cc4da75638.js" crossorigin="anonymous"></script>
 
-
-
-
-
-
-
-          <script src="js/main.js"></script>
-          <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-  
-  </main>
 </body>
 
 </html>
