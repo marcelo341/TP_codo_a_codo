@@ -96,8 +96,13 @@ flex-flow: column nowrap;
             }
           }
 /* *************************Fin de Animación************************************* */
+.encabezado {
+  height: 580px;
+        display: flex;
+        align-items: center;
+}
     .texto-principal{
-        height: 580px;
+        height: 180px;
         display: flex;
         align-items: center;
     }    
@@ -189,9 +194,8 @@ flex-flow: column nowrap;
 
         }
         .publicidad{
-            /* background-color: darkred; */
-             
-        }
+             background-color: #d2cccc;
+            }
 
         
 .footer{
@@ -214,6 +218,7 @@ flex-flow: column nowrap;
         letter-spacing: 2px;
 
     }
+   
 
 @media all and (max-width: 948px) {
 .section {
@@ -234,12 +239,17 @@ justify-content: center;
 .texto-principal{
     height: 600px;
 }
+
         
 }    
 @media all and (max-width: 762px) {
     .articulos {
         flex-direction:column ;
     }
+    .off {
+      display: none;
+    }
+    .nav a{font-size: 25px;}
     }
 
 @media all and (max-width: 400px) {
@@ -247,3 +257,168 @@ justify-content: center;
     flex-direction: column;
 }
     }
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contenedor-titulo-controles h3 {
+    background: #eababa;
+    color: #d01b1b;
+    font-size: 20px;
+  
+  }
+  
+  .indicadores button {
+    background: #fff;
+    height: 4px;
+    width: 10px;
+    cursor: pointer;
+    border: none;
+    margin-right: 4px;
+  }
+  
+  .indicadores button:hover,
+  .indicadores button.activo {
+    background: red;
+  }
+  
+  
+  /* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+  .eventos-recomendadas {
+    position: relative;
+  
+  }
+  
+  .contenedor-principal {
+    align-items: center;
+  }
+  
+  .flecha-izquierda,
+  .flecha-derecha {
+    position: absolute;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 30px;
+    height: 30%;
+    top: calc(50% - 15%);
+    line-height: 40px;
+    width: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 500;
+    transition: .8s ease all;
+  }
+  
+  .flecha-izquierda:hover,
+  .flecha-derecha:hover {
+    background: rgba(0, 0, 0, .9);
+  }
+  
+  .flecha-izquierda {
+    left: 0;
+  }
+  
+  .flecha-derecha {
+    right: 0;
+  }
+  
+  /* ---- ----- ----- Carousel ----- ----- ----- */
+  .eventos-recomendadas .contenedor-carousel {
+    padding: 5px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  
+  }
+  
+  .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 900px;
+   height: 300px;
+    
+  }
+  
+  .evento {
+   min-width: 33%;
+   display: flex;
+  
+  }
+  
+  
+  .evento img {
+   width: 99%;
+   height: 100%;
+    border-radius: 10px;
+  }
+  
+  
+  .flip-box {
+    width: 100%;
+    height: 100%;
+  
+  }
+  
+  /* dos puntos de corte para el courucel para que no se vea chiquito no lo pude hacer full responsiv por deformacion de imagenes*/
+  
+  
+  @media (max-width: 948px) {
+    .evento {
+      min-width: 50%;
+    }
+    .carousel {
+      width: 600px;
+     height: 300px;
+      
+    }
+  }
+  @media (max-width: 600px) {
+    .evento {
+      min-width: 100%;
+    }
+    .carousel {
+      width: 300px;
+     height: 300px;
+      
+    }
+  }
+  
+  
+  /* Contendor de back flip y fron flip */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Hace flip horizontl al pasar el mouse*/
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Posiciones de flip adelante */
+  .flip-box-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* estilos y posiciones de flip de atras */
+  .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(32, 25, 106, 0.763);
+    color: rgb(236, 5, 5);
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    border-radius: 20px;
+    font-size: 15px;
+  }
+  
