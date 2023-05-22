@@ -96,11 +96,7 @@ flex-flow: column nowrap;
             }
           }
 /* *************************Fin de Animación************************************* */
-.encabezado {
-  height: 580px;
-        display: flex;
-        align-items: center;
-}
+
     .texto-principal{
         height: 180px;
         display: flex;
