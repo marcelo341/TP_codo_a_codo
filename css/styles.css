@@ -150,16 +150,21 @@ flex-flow: column nowrap;
             background: #546cc3
         }
         h3{
-            color: #fff;
+            color: #110101;
             font-size: 13px;
             padding: 10px 0;
             margin-top: -80px;
+            background-color: #d2cccc;
+            
+            
         }
         h2{
-          font-size: 25px;
+          font-size: 20px;
           text-transform: uppercase;
           padding: 0px 0 10px 0;
-          color: #fff;  
+          color: #130101; 
+           
+          
         }
         .navegacion{
             background-color:#000;
@@ -357,7 +362,7 @@ justify-content: center;
   
   }
   
-  /* dos puntos de corte para el courucel para que no se vea chiquito no lo pude hacer full responsiv por deformacion de imagenes*/
+  /* dos puntos de corte para el carrousel */
   
   
   @media (max-width: 948px) {
@@ -392,7 +397,7 @@ justify-content: center;
     transform-style: preserve-3d;
   }
   
-  /* Hace flip horizontl al pasar el mouse*/
+  /* Hace flip horizontal al pasar el mouse*/
   .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
   }
