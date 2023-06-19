@@ -385,6 +385,7 @@ justify-content: center;
      height: 300px;
       
     }
+   
   }
   
   
@@ -417,10 +418,10 @@ justify-content: center;
     width: 100%;
     height: 100%;
     background: rgba(32, 25, 106, 0.763);
-    color: rgb(236, 5, 5);
+    color: rgba(247, 242, 242, 0.959);
     transform: rotateY(180deg);
     backface-visibility: hidden;
     border-radius: 20px;
-    font-size: 15px;
+    font-size: 20px;
   }
   
