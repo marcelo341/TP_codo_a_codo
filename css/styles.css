@@ -254,7 +254,7 @@ justify-content: center;
     .nav a{font-size: 25px;}
     }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 576px) {
 .aside{
     flex-direction: column;
 }
